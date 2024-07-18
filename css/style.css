@@ -71,20 +71,6 @@ img {
     margin: 0 0 8px 0;
 }
 
-/* for hidding elements */
-.visually-hidden { 
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    margin: -1px; 
-    border: 0; 
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 /* site header */
 .header {
     border-bottom: 1px solid var(--header-brd);
@@ -383,8 +369,6 @@ img {
 .footer {
     background-color: var(--bg-accent);
     padding: 100px 0;
-    display: flex;
-    align-items: center;
 }
 .footer .container {
     display: flex;
@@ -403,7 +387,11 @@ img {
     color: var(--foot-acent);
     letter-spacing: 0.02em;
 }
-.footer-social-txt {
+.footer-social-cnt {
+    margin: 0 80px 0 0;
+}
+.footer-social-txt,
+.footer-subscribe-txt {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -436,4 +424,60 @@ img {
 }
 .footer-social-icon {
     fill: var(--social-icon);
+}
+.footer-subscribe-form {
+    display: flex;
+    align-items: center;
+}
+.footer-subscribe-input {
+    color: var(--foot-social);
+    background-color: var(--bg-accent);
+    border: 1px solid var(--foot-social);
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    margin: 0 24px 0 0;
+    padding-left: 16px;
+}
+.footer-subscribe-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: var(--foot-social);
+}
+.footer-subscribe-button {
+    border-radius: 4px;
+    padding: 8px 24px;
+    height: 40px;
+    background: var(--bg-social);
+    display: flex;
+}
+.footer-subscribe-button span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--foot-social);
+    margin: 0 16px 0 0;
+}
+.footer-subscribe-icon {
+    fill: var(--foot-social);
+}
+/* modal form */
+
+/* for hidding elements */
+.visually-hidden { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
