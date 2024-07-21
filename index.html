@@ -41,7 +41,7 @@
         <section id="main" class="section sect-main">
             <div class="container" >
                 <h1 class="lvl-one sect-main-header">Effective Solutions for Your Business</h1>
-                <button class="sect-main-botton" type="button">Order Service</button>
+                <button class="sect-main-botton" type="button" onclick='document.getElementById("modal-form").classList.add("is-open")'>Order Service</button>
             </div>
         </section>
         <!-- second section-->
@@ -305,7 +305,7 @@
                 </ul>
             </div>
             <div class="footer-subscribe-cnt">
-                <p class="footer-subscribe-txt">Subscribe?</p>
+                <p class="footer-subscribe-txt">Subscribe</p>
                 <form class="footer-subscribe-form" name="subscribtion" >
                     <label class="footer-subscribe-label" >
                         <input class="footer-subscribe-input" type="email" name="email" id="subscr-email" placeholder="E-mail">
@@ -321,9 +321,9 @@
         </div>
     </footer>
 
-    <div class="backdrop is-open" >
+    <div id="modal-form" class="backdrop" >
         <div class="modal">
-            <button class="modal-close-btn" type="button">
+            <button class="modal-close-btn" type="button" onclick='document.getElementById("modal-form").classList.remove("is-open")'>
                 <svg class="modal-close-icon" width="8" height="8">
                   <use href="./images/icons.svg#icon-icon-close"></use>
                 </svg>
