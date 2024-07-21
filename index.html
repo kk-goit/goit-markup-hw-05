@@ -305,7 +305,7 @@
                 </ul>
             </div>
             <div class="footer-subscribe-cnt">
-                <p class="footer-subscribe-txt">Subscribe</p>
+                <p class="footer-subscribe-txt">Subscribe?</p>
                 <form class="footer-subscribe-form" name="subscribtion" >
                     <label class="footer-subscribe-label" >
                         <input class="footer-subscribe-input" type="email" name="email" id="subscr-email" placeholder="E-mail">
@@ -340,7 +340,7 @@
                       <input
                         class="modal-form-input"
                         type="text"
-                        name="name"
+                        name="user-name"
                         id="user-name"
                       />
                       <svg class="modal-form-icon" width="18" height="24">
@@ -349,69 +349,52 @@
                     </div>
                 </div>
                 <div class="modal-form-field">
-                    <label class="modal-form-label" for="user_phone">Phone</label>
+                    <label class="modal-form-label" for="user-phone">Phone</label>
                     <div class="modal-form-wrapper">
                       <input
                         class="modal-form-input"
                         type="tel"
-                        name="phone"
-                        id="user_phone"
+                        name="user-phone"
+                        id="user-phone"
                       />
-                      <svg class="modal-form-icon" width="13" height="13">
+                      <svg class="modal-form-icon" width="18" height="24">
                         <use href="./images/icons.svg#icon-icon-phone"></use>
                       </svg>
                     </div>
                 </div>
                 <div class="modal-form-field">
-                    <label class="modal-form-label" for="user_email">Email</label>
+                    <label class="modal-form-label" for="user-email">Email</label>
                     <div class="modal-form-wrapper">
                       <input
                         class="modal-form-input"
                         type="email"
-                        name="email"
-                        id="user_email"
+                        name="user-email"
+                        id="user-email"
                       />
-                      <svg class="modal-form-icon" width="15" height="12">
+                      <svg class="modal-form-icon" width="18" height="24">
                         <use href="./images/icons.svg#icon-icon-email"></use>
                       </svg>
                     </div>
                 </div>
                 <div class="modal-form-field">
-                    <label class="modal-form-label" for="user_comment">Comment</label>
+                    <label class="modal-form-label" for="user-comment">Comment</label>
                     <textarea
                       class="modal-form-comment"
                       rows="4"
-                      name="user_comment"
-                      id="user_comment"
-                      placeholder="Enter text"
+                      name="user-comment"
+                      id="user-comment"
+                      placeholder="Text input"
                     ></textarea>
                   </div>
-                  <!-- <div class="modal-form-agreement">
-                    <label class="modal-form-desc" for="user_agreement">
-                      <input
-                        class="custom-checkbox"
-                        type="checkbox"
-                        name="user_agreement"
-                        id="user_agreement"
-                        value="false"
-                      />
-                      <svg class="custom-checkbox-icons" width="20" height="20">
-                        <use class="check" href="./images/icons.svg#check"></use>
-                        <use class="uncheck" href="./images/icons.svg#uncheck"></use>
-                      </svg>
-                      I accept the terms and conditions of the
-                      <a class="modal-form-link" href="">Privacy Policy</a>
-                    </label>
-                  </div> -->
                   <div class="modal-form-agreement">
                     <input
                       class="visually-hidden"
                       type="checkbox"
-                      name="agreement"
-                      id="user_agreement"
-                      value="false"
+                      name="user-privacy"
+                      id="user-privacy"
+                      value="true"
                     />
-                    <label class="modal-form-desc" for="user_agreement">
+                    <label class="modal-form-desc" for="user-privacy">
                       <span class="modal-form-checkbox">
                         <svg class="modal-form-checkbox-icon" width="10" height="8">
                           <use href="./images/icons.svg#icon-icon-checked"></use>
@@ -421,7 +404,7 @@
                       <a class="modal-form-link" href="">Privacy Policy</a>
                     </label>
                   </div>
-                  <button class="btn btn-accent" type="submit">Send</button>
+                  <button class="modal-btn-submit" type="submit">Send</button>
               </form>
         </div>
     </div>
