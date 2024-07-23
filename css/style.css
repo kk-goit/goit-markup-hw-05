@@ -15,6 +15,7 @@
     --modal-hover: var(--head-hover);
     --modal-caption: var(--main-acent);
     --modal-frm-label: #8e8f99;
+    --modal-frm-icom: var(--main-acent);
     --modal-frm-check: #F4F4FD;
     --modal-submit: #FFFFFF;
 
@@ -582,7 +583,7 @@ transition-delay: 0s;
     border-color: var(--modal-frm-acent-brd);
 }
 .modal-form-icon {
-    fill: var(--modal-frm-brd);
+    fill: var(--modal-frm-icom);
     position: absolute;
     left:16px;
     top: 50%;
